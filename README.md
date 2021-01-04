@@ -1,12 +1,13 @@
 # mother-tongue
 
-Jady Hom [Github](https://github.com/jadyhome) | [LinkedIn](www.linkedin.com/in/jadyhom)
+#### Jady Hom 
+[Github](https://github.com/jadyhome) | [LinkedIn](www.linkedin.com/in/jadyhom)
 
 ---
 
 ### Description
 
-mother-tongue is a translation full-stack website. Users can input text, choose their language of choice, and translate to the output of their language of choice.
+**mother-tongue** is a language translation full-stack website. Users can input text, choose their language of choice, and translate to the output of their language of choice.
 
 ---
 
@@ -31,8 +32,8 @@ mother-tongue is a translation full-stack website. Users can input text, choose 
 
 - Users will see homepage/landing page.
 - Users will be able to navigate to the translate page.
-- Users will be able to choose language of their choice to translate from and input text.
-- Users will be able to choose language of their choice to translate to and have output text.
+- Users will be able to choose a language of their choice to _translate from_ and input text.
+- Users will be able to choose a language of their choice to _translate to_ and have output text.
 - Users will be able to see history of translations.
 ---
 
