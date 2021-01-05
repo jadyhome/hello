@@ -2,8 +2,14 @@ const AppRouter = require("./routes/AppRouter");
 const PORT = process.env.PORT || 3001;
 const express = require("express");
 const app = express();
-
 const path = require("path");
+
+// Require Middleware
+const logger = require("morgan");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+const { default: axios } = require("axios");
+// Require Middleware
 
 // Initialize Middleware
 app.use(logger("dev"));
