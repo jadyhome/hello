@@ -9,13 +9,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Languages.hasMany(models.Input, {
-        foreignKey: "language_id",
+        foreignKey: "languages_id",
         onDelete: "CASCADE",
         onUpdate: "CASCADE",
       });
 
       Languages.hasMany(models.Output, {
-        foreignKey: "language_id",
+        foreignKey: "languages_id",
         onDelete: "CASCADE",
         onUpdate: "CASCADE",
       });
@@ -23,7 +23,8 @@ module.exports = (sequelize, DataTypes) => {
   }
   Languages.init(
     {
-      languages: DataTypes.STRING,
+      code: DataTypes.STRING,
+      name: DataTypes.STRING
     },
     {
       sequelize,
