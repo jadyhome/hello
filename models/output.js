@@ -8,12 +8,30 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Output.belongsTo(models.Languages, {
+        foreignKey: "languages_id",
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE",
+      });
+
+      Output.belongsToMany(models.Input, {
+        through: models.Translation,
+        foreignKey: "input_id",
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE",
+      });
     }
   }
   Output.init(
     {
-      languages_id: DataTypes.INTEGER,
+      languagesId: {
+        type: DataTypes.INTEGER,
+        field: "languages_id",
+        references: {
+          model: "languages",
+          key: "id",
+        },
+      },
       text: DataTypes.STRING,
     },
     {

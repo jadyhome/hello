@@ -13,8 +13,22 @@ module.exports = (sequelize, DataTypes) => {
   }
   Translation.init(
     {
-      input_id: DataTypes.INTEGER,
-      output_id: DataTypes.INTEGER,
+      inputId: {
+        type: DataTypes.INTEGER,
+        field: "input_id",
+        references: {
+          model: "inputs",
+          key: "id",
+        },
+      },
+      outputId: {
+        type: DataTypes.INTEGER,
+        field: "output_id",
+        references: {
+          model: "outputs",
+          key: "id",
+        },
+      },
     },
     {
       sequelize,
