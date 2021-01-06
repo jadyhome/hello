@@ -1,11 +1,41 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { __TranslateText, __GetLanguages } from "../services/TranslateService";
 
 const Translate = (props) => {
   const [text, setText] = useState("");
+  const [languages, setLanguage] = useState([]);
+  const [selectLanguage, setSelectLanguage] = useState("");
+  const [translate, setTranslate] = useState([]);
 
-  const handleChange = ({ target }) => {
-    setText(target.value);
+  useEffect(() => {
+    getLanguages();
+  }, []);
+
+  const handleChange = (e) => {
+    setText(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (text) {
+      translateText()
+    }
+  };
+
+  const getLanguages = async () => {
+    const response = await __GetLanguages();
+    setLanguage(response);
+  };
+
+  const translateText = async () => {
+    try {
+      const response = await __TranslateText(selectLanguage, text);
+      setTranslate(response)
+      console.log(response)
+    } catch (error) {
+      throw error;
+    }
   };
 
   return (
@@ -15,11 +45,26 @@ const Translate = (props) => {
         {<Link to="/saved">saved</Link>}
       </div>
 
+      <select
+        className="select-language"
+        value={selectLanguage}
+        onChange={(e) => setSelectLanguage(e.target.value)}
+      >
+        {languages.map((lang) => (
+          <option key={lang.id} value={lang.id}>
+            {lang.name}
+          </option>
+        ))}
+      </select>
+
       <div className="input">
-        <textarea onChange={handleChange} />
+        <form onSubmit={handleSubmit}>
+          <input placeholder="INPUT TEXT" onChange={handleChange} />
+          <button type="submit">Translate</button>
+        </form>
       </div>
       <div className="output">
-        <textarea onChange={handleChange} />
+        {translate.translation}
       </div>
     </div>
   );
