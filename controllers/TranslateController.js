@@ -4,12 +4,16 @@ const { Translate } = require("@google-cloud/translate").v2;
 
 const TranslateText = async (req, res) => {
   const user_input = req.body.text;
-  const user_language = req.body.target;
   try {
+    const user_language = await Languages.findByPk(req.params.language_id);
+
     let translate = new Translate({
       key: process.env.API_KEY,
     });
-    let [translation] = await translate.translate(user_input, user_language);
+    let [translation] = await translate.translate(
+      user_input,
+      user_language.dataValues.code
+    );
     console.log(translation);
     let newInput = await Input.create({
       languagesId: req.params.language_id,
