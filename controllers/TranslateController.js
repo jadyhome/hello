@@ -19,25 +19,14 @@ const TranslateText = async (req, res) => {
       languagesId: req.params.language_id,
       text: translation,
     });
-    // let newRecord = await Translation.create({});
+    let newRecord = await Translation.create({
+      input_id: newInput.dataValues.id,
+      output_id: newOutput.dataValues.id,
+    });
     console.log(newInput);
     console.log(newOutput);
-    // console.log(record);
-    res.send([translation], newInput, newOutput);
-  } catch (error) {
-    throw error;
-  }
-};
-
-const RecordTranslations = async (req, res) => {
-  const input_id = req.params.input_id;
-  const output_id = req.params.output_id;
-  try {
-    let record = await Translation.create({
-      input_id,
-      output_id,
-    });
-    res.send(record);
+    console.log(newRecord);
+    res.send({ translation, newInput, newOutput, newRecord });
   } catch (error) {
     throw error;
   }
@@ -54,6 +43,5 @@ const ListLanguages = async (req, res) => {
 
 module.exports = {
   TranslateText,
-  RecordTranslations,
   ListLanguages,
 };

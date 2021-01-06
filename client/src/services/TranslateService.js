@@ -9,17 +9,6 @@ export const __TranslateText = async (languageId) => {
   }
 };
 
-export const __RecordTranslations = async (inputId, outputId) => {
-  try {
-    const res = await ApiClient.post(
-      `/translate/record/${inputId}/${outputId}`
-    );
-    return res.data;
-  } catch (error) {
-    throw error;
-  }
-};
-
 export const __GetLanguages = async () => {
   try {
     const res = await ApiClient.get("/translate/getlanguages");
