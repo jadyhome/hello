@@ -1,0 +1,58 @@
+/** INPUT AND OUTPUT CONTAINER **/
+.inputs-container {
+  margin-left: 100px;
+}
+
+.outputs-container {
+  margin-right: 100px;
+}
+
+.bartwo {
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid #000;
+  background-color: #f37687;
+  box-shadow: 12px 12px 1px 1px #9bd8fb;
+}
+
+.inputs,
+.outputs {
+  background-color: #ff9daa;
+  box-shadow: 12px 12px 1px 1px #9bd8fb;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  height: 400px;
+  overflow: scroll;
+}
+
+.input-data,
+.output-data {
+  display: flex;
+  width: 350px;
+  height: 100px;
+  align-items: center;
+  justify-items: center;
+}
+/** INPUT AND OUTPUT CONTAINER **/
+
+/** DATA AND DELETE BUTTON **/
+h4 {
+  margin-left: 20px;
+}
+
+.delete {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-inline-start: auto;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.delete:hover {
+  color: #fff;
+}
+/** DATA AND DELETE BUTTON **/
