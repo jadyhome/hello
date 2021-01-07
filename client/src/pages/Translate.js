@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { __TranslateText, __GetLanguages } from "../services/TranslateService";
 
-const Translate = (props) => {
+const Translate = () => {
   const [text, setText] = useState("");
   const [language, setLanguage] = useState([]);
   const [selectLanguage, setSelectLanguage] = useState("");

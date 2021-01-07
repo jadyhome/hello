@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import Translate from "../pages/Translate";
 import Saved from '../pages/Saved'
 
-const Router = (props) => {
+const Router = () => {
   const [pageLoading, setPageLoading] = useState(true);
 
   useEffect(() => {
@@ -18,8 +18,8 @@ const Router = (props) => {
       ) : (
         <Switch>
           <Route exact path="/" component={() => <Home />} />
-          <Route path="/translate" component={(props) => <Translate />} />
-          <Route path="/saved" component={(props) => <Saved />} />
+          <Route path="/translate" component={() => <Translate />} />
+          <Route path="/saved" component={() => <Saved />} />
         </Switch>
       )}
     </main>
