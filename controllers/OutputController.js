@@ -1,6 +1,4 @@
-require("dotenv").config();
-const { Input, Output, Languages, Translation } = require("../models");
-const { Translate } = require("@google-cloud/translate").v2;
+const { Output } = require("../models");
 
 const GetOutputTranslations = async (req, res) => {
   try {
