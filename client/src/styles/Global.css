@@ -1,7 +1,8 @@
 html {
-  background-color: #D6C5F0;
+  background-color: #d3bcd3;
 }
 
+/** TOP HEADER SECTION **/
 .top-left {
   display: flex;
   justify-content: flex-start;
@@ -13,7 +14,7 @@ html {
   list-style-type: none;
   padding: 5px 10px 5px 10px;
   font-weight: 600;
-  background-color: lightcoral;
+  background-color: #fe907f;
 }
 
 .line {
@@ -22,7 +23,7 @@ html {
   list-style-type: none;
   padding: 5px 10px 5px 10px;
   font-weight: 600;
-  background-color: palegoldenrod;
+  background-color: #feeca6;
 }
 
 .oh {
@@ -31,7 +32,7 @@ html {
   list-style-type: none;
   padding: 5px 10px 5px 10px;
   font-weight: 600;
-  background-color: lightgreen;
+  background-color: #c5e6ab;
 }
 
 .nav {
@@ -51,37 +52,52 @@ a {
   font-weight: 800;
 }
 
-.click {
-  float: right;
-  text-align: center;
-  line-height: 100px;
-  width: 100px;
-  height: 100px;
-  background-color: rgb(241, 168, 163);
-  color: #fff;
-  border-radius: 50%;
+a:hover {
+  background-color: #fff;
+  color: #000;
 }
+/** TOP HEADER SECTION **/
 
-.title {
-  background-color: lightskyblue;
-  width: 200px;
-  text-align: center;
-  padding: 20px;
-  margin-left: 100px;
-  margin-top: 100px;
-}
-
+/** USED IN BOTH CONTAINER **/
 .inout-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  /* margin: 20px; */
   width: 100%;
+  /* margin-left: 100px; */
 }
 
-form {
-  display: grid;
-  justify-items: center;
+.bar {
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid #000;
+  background-color: #70b6ec;
+  box-shadow: 12px 12px 1px 1px #ff9daa;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+  border-right: 2px solid #000;
+  background-color: #fff;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h1:first-child {
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+li {
+  display: flex;
+  margin-inline-start: 0px;
+  list-style-type: none;
+  border-left: 2px solid #000;
+  background-color: #fff;
+  padding: 5px 10px 5px 10px;
+  font-weight: 600;
 }
 
 select {
@@ -90,30 +106,49 @@ select {
   outline: none;
   width: 200px;
   font-size: 22px;
-  margin-left: 50px;
+  margin-left: 65px;
+}
+/** USED IN BOTH CONTAINER **/
+
+/** INPUT CONTAINER **/
+.input {
+  margin-left: 100px;
+}
+
+form {
+  display: grid;
+  justify-items: center;
+  width: 350px;
+  border: 2px solid #000;
+  background-color: #9bd8fb;
+  box-shadow: 12px 12px 1px 1px #ff9daa;
 }
 
 .dropdown {
   padding: 10px;
-  background-color: #9BD8FB;
+  background-color: #9bd8fb;
   border-left: 2px solid #000;
   border-right: 2px solid #000;
+  box-shadow: 12px 12px 1px 1px #ff9daa;
 }
 
 textarea {
-  width: 300px;
-  height: 250px;
+  width: 275px;
+  height: 200px;
   border: 2px solid #000;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   font-size: 22px;
+  margin-top: 20px;
   padding: 20px;
   outline: none;
   resize: none;
 }
 
 textarea::placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   font-size: 22px;
   color: #ccc;
@@ -122,18 +157,27 @@ textarea::placeholder {
 
 .translate-button {
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 100px;
   height: 40px;
   border: none;
   outline: none;
   border: 2px solid #000;
-  background-color: #9BD8FB;
+  background-color: #fff;
   font-weight: 600;
+  cursor: pointer;
 }
 
-h1 {
-  margin-block-start: 0;
-  margin-block-end: 0;
+.translate-button:hover {
+  border: none;
+  background-color: #ff9daa;
+  color: #fff;
+}
+/** INPUT CONTAINER **/
+
+/** OUTPUT CONTAINER **/
+.output {
+  margin-right: 100px;
 }
 
 h3 {
@@ -143,45 +187,30 @@ h3 {
   margin-block-end: 0;
 }
 
-.output {
-  width: 300px;
-  height: 250px;
-  padding: 20px;
+.output-wrap {
+  display: grid;
+  justify-items: center;
+  width: 350px;
   border: 2px solid #000;
-  background-color: #fff;
+  background-color: #9bd8fb;
+  box-shadow: 12px 12px 1px 1px #ff9daa;
 }
 
 .empty {
   padding: 10px;
-  background-color: #9BD8FB;
+  background-color: #9bd8fb;
   border-left: 2px solid #000;
   border-right: 2px solid #000;
+  box-shadow: 12px 12px 1px 1px #ff9daa;
 }
 
-h1 {
-  font-size: 20px;
-  font-weight: 600;
-  border-right: 2px solid #000;
-}
-
-h1:first-child {
-  margin-right: auto;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.bar {
-  display: flex;
-  justify-content: flex-end;
+.output-textbox {
+  width: 275px;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  padding: 20px;
   border: 2px solid #000;
   background-color: #fff;
 }
-
-li {
-  display: flex;
-  margin-inline-start: 0px;
-  list-style-type: none;
-  border-left: 2px solid #000;
-  padding: 5px 10px 5px 10px;
-  font-weight: 600;
-}
+/** OUTPUT CONTAINER **/

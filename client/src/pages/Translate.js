@@ -32,7 +32,6 @@ const Translate = () => {
     try {
       const response = await __TranslateText(selectLanguage, text);
       setTranslate(response);
-      console.log(response);
     } catch (error) {
       throw error;
     }
@@ -54,11 +53,11 @@ const Translate = () => {
       <div className="inout-container">
         <div className="input">
           <div className="bar">
-            <h1>x_x</h1>
+            <h1>x _ o</h1>
             <li>–</li>
-            <li>X</li>
+            <li>x</li>
           </div>
-          
+
           <div className="dropdown">
             <select
               className="select-language"
@@ -74,18 +73,18 @@ const Translate = () => {
           </div>
 
           <form onSubmit={handleSubmit}>
-            <textarea placeholder="INPUT TEXT" onChange={handleChange} />
+            <textarea placeholder="input text" onChange={handleChange} />
             <button type="submit" className="translate-button">
-              Translate
+              translate
             </button>
           </form>
         </div>
 
-        <div className="header">
+        <div className="output">
           <div className="bar">
-            <h1>x_x</h1>
+            <h1>x _ o</h1>
             <li>–</li>
-            <li>X</li>
+            <li>x</li>
           </div>
           <div className="empty">
             <select>
@@ -93,8 +92,10 @@ const Translate = () => {
               <option>boop</option>
             </select>
           </div>
-          <div className="output">
-            <h3>{translate.translation}</h3>
+          <div className="output-wrap">
+            <div className="output-textbox">
+              <h3>{translate.translation}</h3>
+            </div>
           </div>
         </div>
       </div>
