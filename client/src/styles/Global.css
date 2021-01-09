@@ -37,8 +37,6 @@ html {
 
 .nav {
   float: right;
-  margin-top: 10px;
-  margin-bottom: 40px;
   flex-direction: column;
 }
 
@@ -64,7 +62,6 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   width: 100%;
-  /* margin-left: 100px; */
 }
 
 .bar {
