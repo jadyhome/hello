@@ -54,6 +54,9 @@ const Saved = () => {
       <div className="nav">
         {<Link to="/">home</Link>}
         {<Link to="/translate">translate</Link>}
+        {<Link to="/korean">korean</Link>}
+        {<Link to="/japanese">japanese</Link>}
+        {<Link to="/chinese">chinese</Link>}
       </div>
 
       <div className="inout-container">
