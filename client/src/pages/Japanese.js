@@ -30,6 +30,13 @@ const Japanese = () => {
         {<Link to="/saved">saved</Link>}
         {<Link to="/korean">korean</Link>}
         {<Link to="/chinese">chinese</Link>}
+        {<Link to="/about">about</Link>}
+      </div>
+
+      <div className="info">
+        <h6>
+          japanese 101 <br /> common phrases you can use
+        </h6>
       </div>
 
       <div className="ja-card">
