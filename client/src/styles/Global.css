@@ -1,5 +1,6 @@
 html {
   background-color: #d3bcd3;
+  height: 100vh;
 }
 
 /** TOP HEADER SECTION **/
@@ -38,6 +39,7 @@ html {
 .nav {
   float: right;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 a {
