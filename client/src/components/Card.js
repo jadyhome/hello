@@ -4,7 +4,7 @@ import "../styles/Card.css";
 const Card = ({ phrases, translation, romanization }) => {
   return (
     <div className="card">
-      <div className="data-wrap">
+      <div className="data">
         <div className="english">
           <h5>{phrases}</h5>
         </div>
