@@ -31,9 +31,10 @@
 .output-data {
   display: flex;
   width: 350px;
-  height: 100px;
+  height: 75px;
   align-items: center;
   justify-items: center;
+  font-family: "Trispace", sans-serif;
 }
 /** INPUT AND OUTPUT CONTAINER **/
 
