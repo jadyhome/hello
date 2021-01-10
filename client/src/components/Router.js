@@ -6,6 +6,7 @@ import Saved from "../pages/Saved";
 import Korean from "../pages/Korean";
 import Japanese from "../pages/Japanese";
 import Chinese from "../pages/Chinese";
+import About from '../pages/About'
 
 const Router = () => {
   const [pageLoading, setPageLoading] = useState(true);
@@ -26,6 +27,7 @@ const Router = () => {
           <Route path="/korean" component={() => <Korean />} />
           <Route path="/japanese" component={() => <Japanese />} />
           <Route path="/chinese" component={() => <Chinese />} />
+          <Route path="/about" component={() => <About />} />
         </Switch>
       )}
     </main>
