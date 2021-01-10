@@ -64,7 +64,7 @@ const Saved = () => {
         <div className="inputs-container">
           <div className="bartwo">
             <h1>input</h1>
-            <li>–</li>
+            <li>_</li>
             <li>x</li>
           </div>
           <div className="inputs">
@@ -84,7 +84,7 @@ const Saved = () => {
         <div className="outputs-container">
           <div className="bartwo">
             <h1>output</h1>
-            <li>–</li>
+            <li>_</li>
             <li>x</li>
           </div>
           <div className="outputs">

@@ -58,7 +58,7 @@ const Translate = () => {
         <div className="input">
           <div className="bar">
             <h1>x _ o</h1>
-            <li>–</li>
+            <li>_</li>
             <li>x</li>
           </div>
 
@@ -87,7 +87,7 @@ const Translate = () => {
         <div className="output">
           <div className="bar">
             <h1>x _ o</h1>
-            <li>–</li>
+            <li>_</li>
             <li>x</li>
           </div>
           <div className="empty">

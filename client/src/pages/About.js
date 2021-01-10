@@ -21,23 +21,24 @@ const About = () => {
 
       <div className="about-title">
         <p>
-          about <em>mother-tongue</em>
+          about <br />
+          <em>mother–tongue</em>
         </p>
       </div>
       <div className="about-box">
         <div className="about-bar">
           <h1>about</h1>
-          <li>–</li>
+          <li>_</li>
           <li>x</li>
         </div>
         <div className="about-info">
           <h2>
             mother-tongue is a full-stack translating website utilizing google's
-            cloud platform translate api. 
+            cloud platform translate api.
             <br />
             <br />
             i've also incorporated my own translations in the languages i'm most
-            familiar with. 
+            familiar with.
             <br />
             <br />
             feel free to look at my github @ jadyhome 👋
