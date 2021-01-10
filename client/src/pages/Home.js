@@ -31,7 +31,7 @@ const Home = () => {
         <div className="title">
           <h2>
             <em>
-              mother-
+              mother–
               <br />
               tongue
             </em>
