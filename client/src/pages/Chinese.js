@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { __GetZh } from "../services/LanguageService";
+import Card from "../components/Card";
 
 const Chinese = () => {
   const [zh, setZh] = useState([]);
@@ -32,13 +33,14 @@ const Chinese = () => {
       </div>
 
       <div className="zh-card">
-        {zh.map((z) => {
-          <div className="z" key={z.id}>
-            <p>{z.phrases}</p>
-            <p>{z.translation}</p>
-            <p>{z.romanization}</p>
-          </div>;
-        })}
+        {zh.map((z) => (
+          <Card
+            key={z.id}
+            phrases={z.phrases}
+            translation={z.translation}
+            romanization={z.romanization}
+          />
+        ))}
       </div>
     </div>
   );

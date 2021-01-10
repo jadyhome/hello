@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { __GetJa } from "../services/LanguageService";
+import Card from "../components/Card";
 
 const Japanese = () => {
   const [ja, setJa] = useState([]);
@@ -15,7 +16,6 @@ const Japanese = () => {
     console.log(jaLang);
   };
 
-  console.log(ja[0].id)
   return (
     <div className="ja-page">
       <div className="top-left">
@@ -31,15 +31,16 @@ const Japanese = () => {
         {<Link to="/korean">korean</Link>}
         {<Link to="/chinese">chinese</Link>}
       </div>
-      
+
       <div className="ja-card">
-        {ja.map((j) => {
-          <div className="j" key={j.id}>
-            <p>{j.phrases}</p>
-            <p>{j.translation}</p>
-            <p>{j.romanization}</p>
-          </div>;
-        })}
+        {ja.map((j) => (
+          <Card
+            key={j.id}
+            phrases={j.phrases}
+            translation={j.translation}
+            romanization={j.romanization}
+          />
+        ))}
       </div>
     </div>
   );

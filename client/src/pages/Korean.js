@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { __GetKo } from "../services/LanguageService";
+import Card from "../components/Card";
 
 const Korean = () => {
   const [ko, setKo] = useState([]);
@@ -32,13 +33,14 @@ const Korean = () => {
       </div>
 
       <div className="ko-card">
-        {ko.map((k) => {
-          <div className="k" key={k.id}>
-            <p>{k.phrases}</p>
-            <p>{k.translation}</p>
-            <p>{k.romanization}</p>
-          </div>;
-        })}
+        {ko.map((k) => (
+          <Card
+            key={k.id}
+            phrases={k.phrases}
+            translation={k.translation}
+            romanization={k.romanization}
+          />
+        ))}
       </div>
     </div>
   );
