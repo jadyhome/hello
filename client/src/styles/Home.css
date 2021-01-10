@@ -6,7 +6,7 @@
 }
 
 .click {
-  float: right;
+  float: left;
   text-align: center;
   line-height: 50px;
   width: 100px;
@@ -47,4 +47,8 @@ p {
   margin-block-end: 0;
   font-size: 12vh;
   text-align: justify;
+}
+
+.title {
+  font-size: 50px;
 }
