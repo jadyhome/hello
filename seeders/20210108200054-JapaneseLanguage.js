@@ -31,7 +31,7 @@ module.exports = {
       {
         phrases: "One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten",
         translation:
-          "いち (一), に (二), さん (三), よん (四), ご (五), ろく (六), なな (七), はち (八), きゅう (九), じゅう (十)",
+          "いち, に, さん, よん, ご, ろく, なな, はち, きゅう, じゅう",
         romanization: "Ichi, Ni, San, Yon, Go, Roku, Nana, Hachi, Kyuu, Jyuu",
       },
       {
@@ -41,8 +41,8 @@ module.exports = {
       },
       {
         phrases: "I want to buy this",
-        translation: "これ　は　ください",
-        romanization: "Kore wa kudasai",
+        translation: "これ　を　ください",
+        romanization: "Kore wo kudasai",
       },
       {
         phrases: "Can I order?",
@@ -61,7 +61,7 @@ module.exports = {
       },
       {
         phrases: "You are welcome",
-        translation: "どういたしまして",
+        translation: "どう いたしまして",
         romanization: "Dō　itashimashite",
       },
       {

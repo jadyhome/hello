@@ -95,8 +95,8 @@ module.exports = {
       },
       {
         phrases: "Can you help me please?",
-        translation: "도와 줄수있으세요?",
-        romanization: "Dowa julsu-iss-euseyo?",
+        translation: "도와줄 수 있어요?",
+        romanization: "Dowajul su iss-eoyo?",
       },
       {
         phrases: "I'm hungry / I'm sleepy / I'm tired",
