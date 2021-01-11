@@ -6,7 +6,7 @@ import Saved from "../pages/Saved";
 import Korean from "../pages/Korean";
 import Japanese from "../pages/Japanese";
 import Chinese from "../pages/Chinese";
-import About from '../pages/About'
+import About from "../pages/About";
 
 const Router = () => {
   const [pageLoading, setPageLoading] = useState(true);
