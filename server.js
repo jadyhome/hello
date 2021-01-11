@@ -8,7 +8,6 @@ const path = require("path");
 const logger = require("morgan");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const { default: axios } = require("axios");
 // Require Middleware
 
 // Initialize Middleware
