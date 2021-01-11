@@ -45,10 +45,8 @@ const Saved = () => {
 
   return (
     <div className="saved-page">
-      <div className="top-left">
-        <div className="ex">x</div>
-        <div className="line">_</div>
-        <div className="oh">o</div>
+      <div className="top-bar">
+        <h1 className="header">saved</h1>
       </div>
 
       <div className="nav">
@@ -65,7 +63,8 @@ const Saved = () => {
           <div className="bartwo">
             <h1>input</h1>
             <li>_</li>
-            <li>x</li>
+            <li>❑</li>
+            <li>X</li>
           </div>
           <div className="inputs">
             {input.map((inpt) => (
@@ -85,7 +84,8 @@ const Saved = () => {
           <div className="bartwo">
             <h1>output</h1>
             <li>_</li>
-            <li>x</li>
+            <li>❑</li>
+            <li>X</li>
           </div>
           <div className="outputs">
             {output.map((outpt) => (

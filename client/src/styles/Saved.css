@@ -10,18 +10,18 @@
 .bartwo {
   display: flex;
   justify-content: flex-end;
-  border: 2px solid #000;
-  background-color: #f37687;
-  box-shadow: 12px 12px 1px 1px #9bd8fb;
+  border: 2px solid #0279b2;
+  background-color: #fff;
+  box-shadow: 12px 12px 1px 1px #fc9cb0;
 }
 
 .inputs,
 .outputs {
-  background-color: #ff9daa;
-  box-shadow: 12px 12px 1px 1px #9bd8fb;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
+  background-color: #0279b2;
+  box-shadow: 12px 12px 1px 1px #fc9cb0;
+  border-left: 2px solid #0279b2;
+  border-right: 2px solid #0279b2;
+  border-bottom: 2px solid #0279b2;
   width: 350px;
   height: 400px;
   overflow: scroll;
@@ -35,6 +35,7 @@
   align-items: center;
   justify-items: center;
   font-family: "Trispace", sans-serif;
+  color: #fff;
 }
 /** INPUT AND OUTPUT CONTAINER **/
 
@@ -51,10 +52,11 @@ h4 {
   cursor: pointer;
   margin-inline-start: auto;
   background-color: transparent;
+  color: #fff;
   font-size: 20px;
 }
 
 .delete:hover {
-  color: #fff;
+  color: #fc9cb0;
 }
 /** DATA AND DELETE BUTTON **/
