@@ -18,10 +18,8 @@ const Japanese = () => {
 
   return (
     <div className="ja-page">
-      <div className="top-left">
-        <div className="ex">x</div>
-        <div className="line">_</div>
-        <div className="oh">o</div>
+      <div className="top-bar">
+        <h1 className="header">ja</h1>
       </div>
 
       <div className="nav">

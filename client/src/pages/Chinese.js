@@ -18,10 +18,8 @@ const Chinese = () => {
 
   return (
     <div className="zh-page">
-      <div className="top-left">
-        <div className="ex">x</div>
-        <div className="line">_</div>
-        <div className="oh">o</div>
+      <div className="top-bar">
+        <h1 className="header">zh</h1>
       </div>
 
       <div className="nav">

@@ -39,10 +39,8 @@ const Translate = () => {
 
   return (
     <div className="translate-page">
-      <div className="top-left">
-        <div className="ex">x</div>
-        <div className="line">_</div>
-        <div className="oh">o</div>
+      <div className="top-bar">
+        <h1 className="header">translate</h1>
       </div>
 
       <div className="nav">
@@ -59,7 +57,8 @@ const Translate = () => {
           <div className="bar">
             <h1>x _ o</h1>
             <li>_</li>
-            <li>x</li>
+            <li>❑</li>
+            <li>X</li>
           </div>
 
           <div className="dropdown">
@@ -88,7 +87,8 @@ const Translate = () => {
           <div className="bar">
             <h1>x _ o</h1>
             <li>_</li>
-            <li>x</li>
+            <li>❑</li>
+            <li>X</li>
           </div>
           <div className="empty">
             <select>

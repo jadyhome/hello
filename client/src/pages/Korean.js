@@ -18,10 +18,8 @@ const Korean = () => {
 
   return (
     <div className="ko-page">
-      <div className="top-left">
-        <div className="ex">x</div>
-        <div className="line">_</div>
-        <div className="oh">o</div>
+      <div className="top-bar">
+        <h1 className="header">ko</h1>
       </div>
 
       <div className="nav">

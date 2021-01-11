@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="about-page">
-      <div className="top-left">
-        <div className="ex">x</div>
-        <div className="line">_</div>
-        <div className="oh">o</div>
+      <div className="top-bar">
+        <h1 className="header">about</h1>
       </div>
 
       <div className="nav">
@@ -29,7 +27,8 @@ const About = () => {
         <div className="about-bar">
           <h1>about</h1>
           <li>_</li>
-          <li>x</li>
+          <li>❑</li>
+          <li>X</li>
         </div>
         <div className="about-info">
           <h2>
@@ -37,8 +36,8 @@ const About = () => {
             cloud platform translate api.
             <br />
             <br />
-            i've also incorporated my own translations in the languages i'm most
-            familiar with.
+            i've also incorporated my own sets of translations in the languages
+            i'm most familiar with.
             <br />
             <br />
             feel free to look at my github @ jadyhome 👋
