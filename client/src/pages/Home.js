@@ -10,7 +10,7 @@ const Home = () => {
           <h1>hello</h1>
           <li>_</li>
           <li>❑</li>
-          <li>x</li>
+          <li>X</li>
         </div>
 
         <div className="home-box">
