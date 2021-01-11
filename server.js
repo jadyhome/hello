@@ -8,10 +8,12 @@ const path = require("path");
 const logger = require("morgan");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const helmet = require("helmet");
 // Require Middleware
 
 // Initialize Middleware
 app.use(logger("dev"));
+app.use(helmet({ contentSecurityPolicy: false }));
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
