@@ -72,7 +72,7 @@ const Saved = () => {
                   className="delete"
                   onClick={() => handleDeleteInput(inpt.id)}
                 >
-                  🅧
+                  🅇
                 </button>
               </div>
             ))}
@@ -93,7 +93,7 @@ const Saved = () => {
                   className="delete"
                   onClick={() => handleDeleteOutput(outpt.id)}
                 >
-                  🅧
+                  🅇
                 </button>
               </div>
             ))}
