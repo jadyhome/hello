@@ -13,7 +13,6 @@ const Japanese = () => {
   const getJa = async () => {
     const jaLang = await __GetJa();
     setJa(jaLang);
-    console.log(jaLang);
   };
 
   return (

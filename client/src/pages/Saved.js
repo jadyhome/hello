@@ -16,13 +16,11 @@ const Saved = () => {
   const getInputs = async () => {
     const showInputs = await __GetInputs();
     setInput(showInputs);
-    console.log(showInputs);
   };
 
   const getOutputs = async () => {
     const showOutputs = await __GetOutputs();
     setOutput(showOutputs);
-    console.log(showOutputs);
   };
 
   const handleDeleteInput = async (id) => {

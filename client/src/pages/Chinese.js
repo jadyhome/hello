@@ -13,7 +13,6 @@ const Chinese = () => {
   const getZh = async () => {
     const zhLang = await __GetZh();
     setZh(zhLang);
-    console.log(zhLang);
   };
 
   return (

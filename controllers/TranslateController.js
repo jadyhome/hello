@@ -14,7 +14,6 @@ const TranslateText = async (req, res) => {
       user_input,
       user_language.dataValues.code
     );
-    console.log(translation);
     let newInput = await Input.create({
       languagesId: req.params.language_id,
       text: user_input,
@@ -27,9 +26,6 @@ const TranslateText = async (req, res) => {
       input_id: newInput.dataValues.id,
       output_id: newOutput.dataValues.id,
     });
-    console.log(newInput);
-    console.log(newOutput);
-    console.log(newRecord);
     res.send({ translation, newInput, newOutput, newRecord });
   } catch (error) {
     throw error;

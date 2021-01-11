@@ -13,7 +13,6 @@ const Korean = () => {
   const getKo = async () => {
     const koLang = await __GetKo();
     setKo(koLang);
-    console.log(koLang);
   };
 
   return (
