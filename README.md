@@ -24,6 +24,8 @@
 
 ### Getting Started
 
+Check out my deployed website here –– [mother-tongue](https://mother-tongue.herokuapp.com/)
+
 [Trello Board](https://trello.com/b/Jw1J1RK4/mother-tongue) - where I kept track of the process of creating this fullstack application.
 
 ---
