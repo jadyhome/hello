@@ -173,6 +173,7 @@ textarea::placeholder {
 }
 
 h3 {
+  font-family: "Trispace", sans-serif;
   font-weight: 600;
   font-size: 22px;
   margin-block-start: 0;
