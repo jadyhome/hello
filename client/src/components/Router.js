@@ -6,6 +6,7 @@ import Saved from "../pages/Saved";
 import Korean from "../pages/Korean";
 import Japanese from "../pages/Japanese";
 import Chinese from "../pages/Chinese";
+import Create from "../pages/Create";
 import About from "../pages/About";
 
 const Router = () => {
@@ -27,6 +28,7 @@ const Router = () => {
           <Route path="/korean" component={() => <Korean />} />
           <Route path="/japanese" component={() => <Japanese />} />
           <Route path="/chinese" component={() => <Chinese />} />
+          <Route path="/create" component={() => <Create />} />
           <Route path="/about" component={() => <About />} />
         </Switch>
       )}
