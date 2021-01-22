@@ -27,6 +27,7 @@ const Chinese = () => {
         {<Link to="/saved">saved</Link>}
         {<Link to="/korean">korean</Link>}
         {<Link to="/japanese">japanese</Link>}
+        {<Link to="/create">create</Link>}
         {<Link to="/about">about</Link>}
       </div>
 

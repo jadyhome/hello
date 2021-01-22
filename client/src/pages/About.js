@@ -15,6 +15,7 @@ const About = () => {
         {<Link to="/korean">korean</Link>}
         {<Link to="/japanese">japanese</Link>}
         {<Link to="/chinese">chinese</Link>}
+        {<Link to="/create">create</Link>}
       </div>
 
       <div className="about-title">

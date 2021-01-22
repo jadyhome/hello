@@ -53,6 +53,7 @@ const Saved = () => {
         {<Link to="/korean">korean</Link>}
         {<Link to="/japanese">japanese</Link>}
         {<Link to="/chinese">chinese</Link>}
+        {<Link to="/create">create</Link>}
         {<Link to="/about">about</Link>}
       </div>
 
