@@ -1,8 +1,8 @@
 import ApiClient from "./ApiClient";
 
-export const __CreateTranslations = async () => {
+export const __CreateTranslations = async (formData) => {
   try {
-    const res = await ApiClient.post("/create/newtranslation");
+    const res = await ApiClient.post("/create/newtranslation", formData);
     return res.data;
   } catch (error) {
     throw error;
