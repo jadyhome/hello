@@ -7,17 +7,45 @@ import {
 import CardTwo from "../components/CardTwo";
 
 const Create = () => {
-  const [create, setCreate] = useState([]);
-  const [translation, setTranslation] = useState([]);
+  const [from, setFrom] = useState("");
+  const [to, setTo] = useState("");
+  const [phrases, setPhrases] = useState("");
+  const [translation, setTranslation] = useState("");
+  const [romanization, setRomanization] = useState("");
+  const [allTranslation, setAllTranslation] = useState([]);
 
   useEffect(() => {
     getTranslations();
   }, []);
 
-  const createTranslations = async () => {
+  const handleFrom = async (e) => {
+    setFrom(e.target.value);
+  };
+  const handleTo = async (e) => {
+    setTo(e.target.value);
+  };
+  const handlePhrases = async (e) => {
+    setPhrases(e.target.value);
+  };
+  const handleTranslation = async (e) => {
+    setTranslation(e.target.value);
+  };
+  const handleRomanization = async (e) => {
+    setRomanization(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      from: from,
+      to: to,
+      phrases: phrases,
+      translation: translation,
+      romanization: romanization,
+    };
     try {
-      const createNew = await __CreateTranslations();
-      setCreate(createNew);
+      await __CreateTranslations(data);
+      console.log(data);
     } catch (error) {
       throw error;
     }
@@ -25,7 +53,7 @@ const Create = () => {
 
   const getTranslations = async () => {
     const getAllTranslations = await __GetTranslations();
-    setTranslation(getAllTranslations);
+    setAllTranslation(getAllTranslations);
   };
 
   return (
@@ -43,8 +71,21 @@ const Create = () => {
         {<Link to="/about">about</Link>}
       </div>
 
+      <div className="create-form">
+        <form onSubmit={handleSubmit}>
+          <input placeholder="from what language" onChange={handleFrom} />
+          <input placeholder="to what language" onChange={handleTo} />
+          <input placeholder="phrase" onChange={handlePhrases} />
+          <input placeholder="translation" onChange={handleTranslation} />
+          <input placeholder="romanizaton" onChange={handleRomanization} />
+          <button type="submit" className="create-button">
+            create
+          </button>
+        </form>
+      </div>
+
       <div className="created-cards">
-        {translation.map((trans) => (
+        {allTranslation.map((trans) => (
           <CardTwo
             key={trans.id}
             from={trans.from}
