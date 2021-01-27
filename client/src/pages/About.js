@@ -1,7 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { __CreateComment, __GetComments } from "../services/CommentService";
+import CardThree from "../components/CardThree";
 
 const About = () => {
+  const [name, setName] = useState("");
+  const [comment, setComment] = useState("");
+  const [allComment, setAllComment] = useState([]);
+
+  useEffect(() => {
+    getComments();
+  }, []);
+
+  const handleName = async (e) => {
+    setName(e.target.value);
+  };
+
+  const handleComment = async (e) => {
+    setComment(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = { name: name, comment: comment };
+    try {
+      await __CreateComment(data);
+      console.log(data);
+    } catch (error) {
+      throw error;
+    }
+  };
+
+  const getComments = async () => {
+    const comments = await __GetComments();
+    setAllComment(comments);
+  };
+
   return (
     <div className="about-page">
       <div className="top-bar">
@@ -44,6 +78,23 @@ const About = () => {
             feel free to look at my github @ jadyhome 👋
           </h2>
         </div>
+      </div>
+
+      <div className="comment-form">
+        <form onSubmit={handleSubmit}>
+          comment form in process
+          <input placeholder="name" onChange={handleName} />
+          <input placeholder="comment" onChange={handleComment} />
+          <button type="submit" className="create-button">
+            submit
+          </button>
+        </form>
+      </div>
+
+      <div className="allcomments">
+        {allComment.map((comment) => (
+          <CardThree name={comment.name} comment={comment.comment} />
+        ))}
       </div>
     </div>
   );
