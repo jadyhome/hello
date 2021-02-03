@@ -78,8 +78,8 @@ About Page
 
 ### Future Updates
 
-- [ ] Add a form for users to input their own translations
-- [ ] Add a comment form in the about page for users to leave feedback
+- [x] Add a form for users to input their own translations
+- [x] Add a comment form in the about page for users to leave feedback
 
 ---
 
