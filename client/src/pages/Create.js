@@ -5,6 +5,7 @@ import {
   __GetTranslations,
 } from "../services/CreateService";
 import CardTwo from "../components/CardTwo";
+import "../styles/Create.css";
 
 const Create = () => {
   const [from, setFrom] = useState("");
@@ -59,7 +60,7 @@ const Create = () => {
   return (
     <div className="create-page">
       <div className="top-bar">
-        <h1 className="header">create -- in process</h1>
+        <h1 className="header">create</h1>
       </div>
 
       <div className="nav">
@@ -71,8 +72,10 @@ const Create = () => {
         {<Link to="/about">about</Link>}
       </div>
 
-      <div className="create-form">
-        <form onSubmit={handleSubmit}>
+      
+      <div className="create-container">
+      <h6 className="create-title">input your own translations</h6>
+        <form className="create-form" onSubmit={handleSubmit}>
           <input placeholder="from what language" onChange={handleFrom} />
           <input placeholder="to what language" onChange={handleTo} />
           <input placeholder="phrase" onChange={handlePhrases} />
