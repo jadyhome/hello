@@ -1,8 +1,20 @@
 .cardthree {
-    display: flex;
-    align-items: flex-start;
-    background-color: #fff;
-    border: 2px solid #0279b2;
-    width: 275px;
-    height: 350px;
-  }
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border: 2px solid #0279b2;
+  width: 275px;
+  height: 350px;
+}
+
+.datathree {
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: #0279b2;
+}
+
+.cardthree:hover {
+  box-shadow: 0px 12px #fc9cb0;
+  transform: translateY(-10px);
+}
