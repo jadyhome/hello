@@ -75,17 +75,20 @@ const About = () => {
             i'm most familiar with.
             <br />
             <br />
+            leave a comment below for any feedback!!
+            <br />
+            <br />
             feel free to look at my github @ jadyhome 👋
           </h2>
         </div>
       </div>
 
-      <div className="comment-form">
-        <form onSubmit={handleSubmit}>
-          comment form in process
+      <div className="comment-container">
+        <form className="comment-form" onSubmit={handleSubmit}>
+          <h6 className="comment-title">leave a comment 😊</h6>
           <input placeholder="name" onChange={handleName} />
           <input placeholder="comment" onChange={handleComment} />
-          <button type="submit" className="create-button">
+          <button type="submit" className="comment-button">
             submit
           </button>
         </form>
