@@ -105,7 +105,7 @@ select {
   margin-left: 100px;
 }
 
-form {
+.translate-form {
   display: grid;
   justify-items: center;
   width: 350px;
@@ -232,7 +232,7 @@ h6 {
 
 .about-box {
   width: 550px;
-  height: 300px;
+  height: 350px;
   background-color: #fff;
   box-shadow: 10px 10px 1px 1px #fc9cb0;
   border-left: 2px solid #0279b2;
@@ -255,5 +255,57 @@ h6 {
   color: #0279b2;
   font-family: "Trispace", sans-serif;
   margin: 20px;
+}
+
+.comment-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.comment-title {
+  font-size: 20px;
+}
+
+.comment-form {
+  display: grid;
+  justify-items: center;
+  width: 350px;
+  background-color: #fff;
+  border: 2px solid #0279b2;
+  box-shadow: 12px 12px 1px 1px #fc9cb0;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.allcomments {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  justify-items: center;
+  width: 100%;
+}
+
+.comment-button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border: 2px solid #0279b2;
+  background-color: #fff;
+  color: #0279b2;
+  font-family: "Trispace", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.comment-button:hover {
+  border: 2px solid #0279b2;
+  background-color: #0279b2;
+  border: 2px solid #fff;
+  color: #fff;
 }
 /** ABOUT PAGE **/
