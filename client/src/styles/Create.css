@@ -1,0 +1,69 @@
+.create-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.create-title {
+  font-size: 50px;
+  text-align: center;
+  margin-block-start: 0;
+}
+
+.create-form {
+  display: grid;
+  justify-items: center;
+  width: 350px;
+  background-color: #0279b2;
+  box-shadow: 12px 12px 1px 1px #fc9cb0;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+input {
+  margin: 10px;
+  width: 250px;
+  height: 30px;
+  outline: none;
+  font-family: "Trispace", sans-serif;
+  font-size: 20px;
+  border: 2px solid #fff;
+  background-color: #0279b2;
+  color: #fff;
+}
+
+input::placeholder {
+  font-family: "Trispace", sans-serif;
+  color: #fff;
+}
+
+.create-button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border: 2px solid #0279b2;
+  background-color: #fff;
+  color: #0279b2;
+  font-family: "Trispace", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background-color: #0279b2;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.created-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  justify-items: center;
+  width: 100%;
+}
