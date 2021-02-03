@@ -76,7 +76,7 @@ const Translate = () => {
             </select>
           </div>
 
-          <form onSubmit={handleSubmit}>
+          <form className="translate-form" onSubmit={handleSubmit}>
             <textarea placeholder="input text" onChange={handleChange} />
             <button type="submit" className="translate-button">
               translate
