@@ -80,6 +80,7 @@ About Page
 
 - [x] Add a form for users to input their own translations
 - [x] Add a comment form in the about page for users to leave feedback
+- [ ] Make website mobile friendly
 
 ---
 
